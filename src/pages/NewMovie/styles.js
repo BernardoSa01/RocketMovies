@@ -6,8 +6,6 @@ export const Container = styled.div`
   main {
     width: 100%;
     max-width: 1298px;
-    /*height: 783px;*/
-
     text-align: justify;
     margin: 40px 106px 85px 123px;
 
@@ -80,7 +78,6 @@ export const Form = styled.form`
 export const CustomInput = styled.input`
   width: 100%;
   max-width: 100%;
-  /*width: 1000px;*/
   height: 56px;
   padding: 18px;
 

@@ -14,8 +14,6 @@ export const Container = styled.header`
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
-
-
 `
 
 export const Nav = styled.div`
