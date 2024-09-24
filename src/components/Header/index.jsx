@@ -14,7 +14,7 @@ export function Header() {
         placeholder="Pesquisar pelo título"
       />
 
-      <Profile>
+      <Profile to="/profile">
           <strong>
             Bernardo Sá
           </strong>

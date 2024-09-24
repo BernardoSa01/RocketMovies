@@ -42,6 +42,10 @@ export const Form = styled.form`
     gap: 8px;
     cursor: pointer;
     margin: 25px auto 8px;
+
+    svg {
+      margin-top: 3px;
+    }
   }
 `
 
