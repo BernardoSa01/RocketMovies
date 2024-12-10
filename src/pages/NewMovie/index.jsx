@@ -16,6 +16,7 @@ export function NewMovie() {
 
   const [tags, setTags] = useState([])
   const [newTag, setNewTag] = useState("")
+  
 
   const navigate = useNavigate()
 
@@ -29,6 +30,18 @@ export function NewMovie() {
   }
 
   async function handleNewNote() {
+    if (!title) {
+      return alert("Digite o título do filme")
+    }
+
+    if (newTag) {
+      return alert("Você preencheu uma tag, mas não clicou no botão para adicioná-la. Clique para adicionar, ou deixe o campo vazio!")
+    }
+
+    if (Number(rating) < 1 || Number(rating) > 5) {
+      return alert("A nota deve ser entre 1 e 5!")
+    }
+
     await api.post("/notes", {
       title,
       description,
@@ -40,6 +53,7 @@ export function NewMovie() {
     navigate("/")
   }
 
+  
   return(
     <Container>
       <Header />
